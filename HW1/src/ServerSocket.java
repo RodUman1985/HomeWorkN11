@@ -22,7 +22,7 @@ public class ServerSocket {
                     boolean isConnected = true;
                     in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                     out = new BufferedWriter((new OutputStreamWriter(clientSocket.getOutputStream())));
-                    out.write("привет сервер, пообщаемся... если надоест скажи"+"\n");
+                    out.write("Приветствую!!! Я калькулятор. Пожалуста, введите задачу в форммате: число знак операции число \n");
                     out.flush();
                     while (isConnected) {
                         String clientWorld = in.readLine();

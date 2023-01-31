@@ -14,7 +14,7 @@ public class ClientSocket {
                 reader = new BufferedReader(new InputStreamReader(System.in));
                 in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
-                System.out.println("приветствую € эмул€ци€ стрелочника");
+
                 String serverWorld = in.readLine();
                 System.out.println(serverWorld);
                 boolean isConnected = true;
